@@ -1,4 +1,4 @@
-# 第 ⑤ 堂｜Vibe coding to AI Coding：AI能幫助我打造軟體，然後呢
+# GDG 上學期社課｜Vibe coding to AI Coding：AI都會寫程式了，什麼都不會的我還需要知道什麼？
 
 ## 先給你偷看的目錄
 
