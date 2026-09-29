@@ -151,6 +151,8 @@ email.py      # 寄信
 | 回饋 | 顯示成功或失敗原因 | 偷改資料 |
 
 ### Interface (介面)：你不必知道所有內部細節
+<details>
+<summary>Interface (介面) 打開來看看</summary>
 
 ```python
 send_email(to, subject, content)
@@ -161,8 +163,11 @@ send_email(to, subject, content)
 
 > 看懂軟體，不等於看懂每一行 Code；而是知道每一塊負責什麼、如何和其他部分溝通。
 
+</details>
 
 ### Data & State（資料與狀態）：程式現在到底記得什麼？
+<details>
+<summary>Data & State 打開來看看</summary>
 
 ```text
 Data：程式需要記住、查詢、保存的內容，可能會透過資料庫儲存
@@ -214,10 +219,13 @@ State：程式現在正在處理的情況，可能關掉或是刷新就消失了
 很多看起來像畫面壞掉的問題，其實不是 UI 壞掉，而是：
 
 > **資料跟畫面沒有同步，在某個資料狀態環節上出問題了。**
+</details>
 
----
 
 ### Rules / Business Logic（規則／商業邏輯）：系統到底允許你做什麼？
+
+<details>
+<summary>Rules / Business Logic 打開來看看</summary>
 
 介面讓使用者操作。
 資料讓系統記得事情。
@@ -266,8 +274,11 @@ State：程式現在正在處理的情況，可能關掉或是刷新就消失了
 
 這點如果各位有興趣去黑客松或是商業競賽時跟別人介紹中很重要喔。
 
----
+</details>
+
 ### Feedback（回饋）：系統做完事情，有沒有跟使用者講？
+<details>
+<summary>Feedback（回饋） 打開來看看</summary>
 
 程式內部成功，不代表使用者知道成功。
 例如使用者按下報名。
@@ -308,8 +319,9 @@ State：程式現在正在處理的情況，可能關掉或是刷新就消失了
 ```
 
 【 **一個系統不只是要做對事情，還要讓使用者跟開發者知道它做對了** 】
+</details>
 
-# 看了這麼多名詞，我們來簡單點。
+## 看了這麼多名詞，我們來簡單點。
 
 ## 3. 先讀 AI 寫的專案，不急著改｜10 分鐘
 
