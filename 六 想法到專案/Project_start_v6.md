@@ -26,7 +26,7 @@ Requirements Engineering → Stakeholder Analysis → Problem Definition → Req
 
 所以軟體專案有很難嗎？想知道的話，我們就來開始吧!
 
-## 今天要完成什麼？
+## 今天要幹嘛？
 
 以自己的 Idea 為主題，你會做出一份「專案起步包」：
 >嘗試找出你想做的專案點子，可能是一個產品、一個想做看看的東西。
@@ -206,14 +206,17 @@ Requirements Engineering → Stakeholder Analysis → Problem Definition → Req
 - DevOps：將開發與維運融合。透過持續整合（CI）與持續部署（CD）的自動化工具鏈，讓軟體在幾分鐘內完成測試、打包並上線，實現「天天甚至每小時部署」的現代高頻率更新。
 ---
 ## 出發之前：想法哪裡來啊
-如果是問我，我的想法大多不是專注在一個討論，或是坐下來仔細想想的時候。事實上大部分都源自於
-馬上先來推薦文章，有點古老但是這是我找到比較貼近我想講的文章
+如果是問我，我的想法大多不是專注在一個討論，或是坐下來仔細想想的時候。事實上大部分都源自於一些很突然的時候，上廁所的時候、吃飯的時候、期中考的時候、睡覺前的時候.....。
 
-[Paul Graham：How to Get Startup Ideas](https://www.paulgraham.com/startupideas.html?utm_source=chatgpt.com)
+隨手記下一些零碎的想法在紙上或手機上是個不錯的方式。
+
+馬上先來推薦文章，有點古老但是這是我找到比較貼近我想講的文章:
+1. [IDEO 設計思維](https://designthinking.ideo.com/process?trk=article-ssr-frontend-pulse_little-text-block)
+2. [Paul Graham：How to Get Startup Ideas](https://www.paulgraham.com/startupideas.html?utm_source=chatgpt.com)
 
 > **不要「想出」Idea，要「注意到」Idea。**
 
-他認為好的想法常常不是坐在桌前：
+好的想法常常不是坐在桌前：
  「我要想一個超棒的專案。」
 硬想出來的。而是來自：
 
@@ -229,15 +232,15 @@ Requirements Engineering → Stakeholder Analysis → Problem Definition → Req
 
 ---
 
-## 你可以尋找的三種 Idea 來源
-### ① Problem-driven
+### 你可以尋找的三種 Idea 來源
+#### ① Problem-driven
 > **「我遇到了什麼問題？」**
 例如：
 
 > 每次下載的檔案都亂七八糟 →  
 > 做檔案整理 ai Agent
 
-### ② Interest-driven
+#### ② Interest-driven
 > **「我對什麼東西感興趣？」**
 
 例如：
@@ -251,7 +254,7 @@ Requirements Engineering → Stakeholder Analysis → Problem Definition → Req
 
 > **「這東西感覺很酷，我想玩玩看。」**
 
-### ③ Domain-driven
+#### ③ Domain-driven
 
 > **「我進入一個我不熟悉的領域，看到了什麼奇怪的東西？」**
 
@@ -260,7 +263,6 @@ Requirements Engineering → Stakeholder Analysis → Problem Definition → Req
 - 社團
 - 醫院
 - 餐廳
-- 實驗室
 - 行銷
 - 運動
 - 音樂
@@ -268,37 +270,16 @@ Requirements Engineering → Stakeholder Analysis → Problem Definition → Req
 
 然後突然：
 
-> 「蛤？你們現在還在這樣做？」
+> 「蛤？你們現在還在這樣做？為什麼？」
 
 在我過去的感受最大的就是，**跨領域碰撞**很容易產生 Idea：懂程式的人進入另一個領域，很容易看到該領域原本沒被軟體解決的問題 ; 另一方面，法商人也可以在科技業發現更多還沒被解決的問題，或是帶自己學到的東西再次回到原本的領域。
 
 我會說：
->我到處跨領域是在找新的靈感，雖然我沒有什麼偉大的成就給同學們作範例，但是我覺得這是一條有趣的路。
+>到處跨領域是在找新的靈感，雖然我沒有什麼偉大的成就給同學們作範例，但是我覺得這是可以參考的一條有趣的路。
 
 ---
 
-###  IDEO 的 Design Thinking 流程
-再來給另一個類似的思維模型 IDEO
-
-## IDEO 是啥
-IDEO 的流程不是一開始就：
-
-> 「來，想十個 Idea。」
-
-而是先 **Gather inspiration**：
-
-> 觀察、訪談、沉浸在真實情境裡。
-
-然後整理出洞察，再 Generate Ideas，最後做成 prototype、測試。[IDEO 設計思維](https://designthinking.ideo.com/process?trk=article-ssr-frontend-pulse_little-text-block\&utm_source=chatgpt.com)
-
-所以你可以把「找 Idea」變成一個**觀察任務**。
-
-例如下課前不是：
-
-> 「下週帶一個 Idea 來。」
-
-而是：
-
+所以你可以把「找 Idea」變成一個**觀察任務**。例如：
 > **這週記錄 5 件讓你覺得「很煩／很蠢／很好玩／很想改善／很好奇」的事情。**
 
 完全不要求它們是好 Idea。
@@ -307,11 +288,11 @@ IDEO 的流程不是一開始就：
 
 ```text
 今天：
-1. 每次社課都有人找不到 Git
+1. 每次社課都有人不會用 Git 
 2. Discord 裡資訊很容易被洗掉
-3. 我一直想知道自己的手勢能不能控制音樂
-4. 老師給的 PDF 很難整理
-5. Satisfactory 的物流好像可以自動最佳化
+3. 社團課的同學好像很常沒來(T_T)
+4. 講師給的 MarkDown 文章很難整理
+5. 要寫一篇文章還需要排版好麻煩
 ```
 
 > **不要逼自己想出一個 Idea。先去生活、去玩、去學、去觀察，然後注意那些讓你「欸？」的東西。**
@@ -328,6 +309,7 @@ IDEO 的流程不是一開始就：
 
 > **開始對世界產生「這東西是不是可以被做得不一樣？」的注意力。**
 
+接下來，就可以出發了！
 
 ## 1. 產品跟提案的出發點：從痛點拆出真正的問題
 提供那些在思考自己設計的專案是需要去公開上架、尋找使用者、競爭的人的起點。
