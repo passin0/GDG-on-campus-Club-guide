@@ -1,5 +1,6 @@
 # GDG 上學期社課｜Vibe coding to AI Coding：AI都會寫程式了，什麼都不會的我還需要知道什麼？
 
+後面會用到喔 >>> [搭配的範例教材](https://github.com/passin0/zoo_manager_code_guide/tree/main)
 ## 先給你偷看的目錄
 
 - [Vibe coding 跟 AI coding 差在哪？](#vibe-coding-跟-ai-coding-差在哪)
