@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AI 時代的軟體工程與專案管理地圖</title>
+<style>
+:root{--bg:#faf9f5;--card:#fff;--s1:#f3f2ee;--tx:#1f1e1d;--tx2:#5f5e5a;--tx3:#888780;--bd:rgba(0,0,0,.12);--bd2:rgba(0,0,0,.22);--acc:#185FA5;
+--pb:#EEEDFE;--pr:#AFA9EC;--pt:#3C3489;--ps:#534AB7;--tb:#E1F5EE;--tr:#5DCAA5;--tt:#085041;--ts:#0F6E56;--cb:#FAECE7;--cr:#F0997B;--ct:#712B13;--cs:#993C1D}
+@media (prefers-color-scheme:dark){:root{--bg:#1f1e1d;--card:#2a2928;--s1:#302f2d;--tx:#f1efe8;--tx2:#b4b2a9;--tx3:#888780;--bd:rgba(255,255,255,.12);--bd2:rgba(255,255,255,.25);--acc:#85B7EB;
+--pb:#3C3489;--pr:#AFA9EC;--pt:#EEEDFE;--ps:#CECBF6;--tb:#085041;--tr:#5DCAA5;--tt:#E1F5EE;--ts:#9FE1CB;--cb:#712B13;--cr:#F0997B;--ct:#FAECE7;--cs:#F5C4B3}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--tx);font-family:system-ui,-apple-system,"Noto Sans TC","PingFang TC","Microsoft JhengHei",sans-serif;line-height:1.75}
+main{max-width:860px;margin:0 auto;padding:40px 20px 80px}
+h1{font-size:28px;font-weight:600;margin:0 0 6px}
+h2{font-size:21px;font-weight:600;margin:56px 0 8px;padding-top:12px;border-top:1px solid var(--bd)}
+h3{font-size:16px;font-weight:600;margin:28px 0 6px}
+p,li{font-size:15.5px}
+.lead{color:var(--tx2);margin:0 0 20px}
+nav{display:flex;gap:8px;flex-wrap:wrap;margin:16px 0 0}
+nav a,.btn{font-size:13px;color:var(--tx);text-decoration:none;border:1px solid var(--bd2);border-radius:8px;padding:5px 12px;background:var(--card)}
+.map{background:var(--card);border:1px solid var(--bd);border-radius:14px;padding:16px 18px 18px;margin:16px 0}
+.sec{font-size:13px;color:var(--tx2);margin:18px 0 8px}
+.sec:first-child{margin-top:4px}
+.lane{display:flex;flex-wrap:wrap;gap:6px;align-items:center}
+.n{border-radius:8px;padding:6px 10px;font-size:13px;cursor:pointer;border:1px solid var(--bd2);background:var(--s1);color:var(--tx);line-height:1.35;font-family:inherit;text-align:left}
+.n small{display:block;font-size:11px;color:var(--tx2)}
+.n.on{outline:2px solid var(--acc);outline-offset:1px}
+.a{color:var(--tx3);font-size:13px}
+.lab{font-size:12px;color:var(--tx2);min-width:72px}
+.p{background:var(--pb);border-color:var(--pr);color:var(--pt)}.p small{color:var(--ps)}
+.t{background:var(--tb);border-color:var(--tr);color:var(--tt)}.t small{color:var(--ts)}
+.c{background:var(--cb);border-color:var(--cr);color:var(--ct)}.c small{color:var(--cs)}
+.det{margin-top:16px;padding:12px 14px;border-radius:10px;background:var(--s1);font-size:14.5px;min-height:64px}
+.legend{display:flex;gap:14px;flex-wrap:wrap;font-size:12px;color:var(--tx2);margin-bottom:4px}
+.sw{display:inline-block;width:14px;height:10px;border-radius:3px;vertical-align:-1px;margin-right:4px;border:1px solid}
+.src li{font-size:13.5px}
+a{color:var(--acc)}
+.note{font-size:13px;color:var(--tx3)}
+</style>
+</head>
+<body>
+<main>
+<h1>AI 時代的軟體工程與專案管理地圖</h1>
+<p class="lead">從規格驅動開發（SDD）出發，往前追兩條源流，往後看 AI 原生工程，再對照專案管理界的演進。點地圖上任一節點可以看說明。整理於 2026 年 11 月。</p>
+<nav><a href="#se">一、軟體工程地圖</a><a href="#pm">二、專案管理地圖</a><a href="#cross">三、兩張地圖的交會</a><a href="#sources">資料來源</a></nav>
+
+<h2 id="se">一、AI 時代的軟體工程</h2>
+<div class="map" data-map="se">
+<div class="sec">往前 ① 流程與管理的演進（怎麼組織人做軟體）</div>
+<div class="lane">
+<button class="n p" data-k="crisis">軟體危機<small>1968 NATO</small></button><span class="a">→</span>
+<button class="n p" data-k="waterfall">瀑布式<small>1970</small></button><span class="a">→</span>
+<button class="n p" data-k="spiral">螺旋 / CMM<small>1986–90s</small></button><span class="a">→</span>
+<button class="n p" data-k="agile">敏捷 Scrum/XP<small>2001</small></button><span class="a">→</span>
+<button class="n p" data-k="devops">DevOps / CI-CD<small>2009</small></button><span class="a">→</span>
+<button class="n p" data-k="sre">SRE / 平台工程<small>2016–</small></button>
+</div>
+<div class="sec">往前 ② 規格思想的演進（怎麼把「意圖」寫清楚）</div>
+<div class="lane">
+<button class="n t" data-k="formal">形式化方法<small>Z, VDM, TLA+</small></button><span class="a">→</span>
+<button class="n t" data-k="dbc">契約式設計<small>1986 Eiffel</small></button><span class="a">→</span>
+<button class="n t" data-k="mdd">模型驅動 MDA<small>2001 UML</small></button><span class="a">→</span>
+<button class="n t" data-k="tdd">TDD<small>~2002</small></button><span class="a">→</span>
+<button class="n t" data-k="bdd">BDD / Gherkin<small>2006</small></button><span class="a">→</span>
+<button class="n t" data-k="api">API-first<small>OpenAPI</small></button>
+</div>
+<div class="sec">匯流 → 現在：AI 原生工程的階梯（2023–2026，每層包住前一層）</div>
+<div class="lane">
+<button class="n c" data-k="complete">自動補全<small>Copilot 2021–</small></button><span class="a">→</span>
+<button class="n c" data-k="prompt">提示工程<small>2023</small></button><span class="a">→</span>
+<button class="n c" data-k="vibe">Vibe coding<small>2025.02</small></button><span class="a">→</span>
+<button class="n c" data-k="context">上下文工程<small>2025 中</small></button><span class="a">→</span>
+<button class="n c" data-k="sdd">規格驅動 SDD<small>2025 下</small></button><span class="a">→</span>
+<button class="n c" data-k="harness">Harness 工程<small>2026</small></button>
+</div>
+<div class="lane" style="margin-top:8px"><span class="lab">SDD 三層級</span>
+<button class="n" data-k="sf">spec-first<small>寫完就丟</small></button>
+<button class="n" data-k="sa">spec-anchored<small>規格跟著維護</small></button>
+<button class="n" data-k="ss">spec-as-source<small>只改規格</small></button></div>
+<div class="lane" style="margin-top:6px"><span class="lab">代表工具</span>
+<button class="n" data-k="kit">GitHub Spec Kit</button><button class="n" data-k="kiro">AWS Kiro</button><button class="n" data-k="tessl">Tessl</button><button class="n" data-k="agents">AGENTS.md / CLAUDE.md</button></div>
+<div class="sec">老概念 → AI 時代的化身</div>
+<div class="lane">
+<button class="n" data-k="m1">需求文件 → spec</button><button class="n" data-k="m2">coding standard → constitution</button><button class="n" data-k="m3">單元測試 → evals</button><button class="n" data-k="m4">code review → 驗收 agent</button><button class="n" data-k="m5">新人 onboarding → 上下文</button><button class="n" data-k="m6">CI gate → eval gate</button>
+</div>
+<div class="sec">往後 / 反向：把軟體工程用在 AI 系統身上（SE for AI）</div>
+<div class="lane">
+<button class="n" data-k="evals">Eval-driven 開發</button><button class="n" data-k="obs">可觀測性 / trace</button><button class="n" data-k="sandbox">沙箱與權限護欄</button><button class="n" data-k="debt">認知債務</button><button class="n" data-k="llmops">MLOps → LLMOps</button><button class="n" data-k="bitter">Bitter lesson 風險</button>
+</div>
+<div class="det">點上面任一節點看說明。</div>
+</div>
+
+<h3>重點一：SDD 在思想上不新，是老東西重新變得划算</h3>
+<p>TDD 本來就是微型規格，BDD 本來就是可執行的意圖，API-first 本來就把合約當成不可輕易改動的東西。AI 只是讓人再也沒有藉口不把意圖寫清楚。學術界也把 BDD 框架和 GitHub Spec Kit 放在同一條脈絡裡分析。流程管理那條線有一個弔詭：敏捷當年是為了反對重文件才出現的，現在文件又變重要了，因為 agent 需要讀它。所以才會有人問 SDD 是不是「瀑布 2.0」。</p>
+<h3>重點二：AI 原生工程是同心圓，不是一個取代一個</h3>
+<p>提示工程是上下文工程的子集，提示只佔 token 預算的一小塊，上下文工程管的是整個預算以及它怎麼演變。最外層是 2026 年出現的 harness 工程：Agent = Model + Harness，harness 是 LLM 以外的所有程式碼、設定和執行環境，上下文工程只是其中一個元件。SDD 在這個階梯裡的作用，是把工作切成邊界清楚的小任務，這本身也是一種上下文工程策略。</p>
+<h3>重點三：業界對 SDD 的評價比行銷文章冷靜</h3>
+<p>Thoughtworks 技術雷達把 SDD 放在 Assess，意思是值得探索，不是馬上採用。他們也提醒，這可能是在重新學一次 bitter lesson：手工為 AI 寫詳細規則，最終沒辦法規模化。實務建議是拿兩三個跨多個模組、或需要利害關係人簽核的中型功能來試，bug 修正和小改動就跳過。</p>
+
+<h2 id="pm">二、專案管理的演進</h2>
+<div class="map" data-map="pm">
+<div class="legend"><span><span class="sw" style="background:var(--pb);border-color:var(--pr)"></span>預測式 / 計畫驅動</span><span><span class="sw" style="background:var(--tb);border-color:var(--tr)"></span>適應式 / 精實敏捷</span><span><span class="sw" style="background:var(--cb);border-color:var(--cr)"></span>AI 時代</span></div>
+<div class="sec">① 管理科學的起點（1900s–1940s）</div>
+<div class="lane">
+<button class="n p" data-k="taylor">科學管理<small>Taylor 1911</small></button><span class="a">→</span>
+<button class="n p" data-k="gantt">甘特圖<small>1910s</small></button><span class="a">→</span>
+<button class="n p" data-k="fayol">管理五職能<small>Fayol 1916</small></button><span class="a">→</span>
+<button class="n p" data-k="manhattan">曼哈頓計畫<small>1942</small></button>
+</div>
+<div class="sec">② 現代專案管理誕生：國防與營建（1950s–60s）</div>
+<div class="lane">
+<button class="n p" data-k="cpm">CPM 要徑法<small>1957 DuPont</small></button><span class="a">+</span>
+<button class="n p" data-k="pert">PERT<small>1958 北極星飛彈</small></button><span class="a">→</span>
+<button class="n p" data-k="wbs">WBS 工作分解<small>1960s DoD</small></button><span class="a">→</span>
+<button class="n p" data-k="evm">實獲值 EVM<small>1960s DoD</small></button><span class="a">→</span>
+<button class="n p" data-k="pmi">IPMA / PMI 成立<small>1965 / 1969</small></button>
+</div>
+<div class="sec">③ 標準化與認證（1980s–2010s）</div>
+<div class="lane">
+<button class="n p" data-k="pmbok">PMBOK 1–6 版<small>1996–2017</small></button><span class="a">·</span>
+<button class="n p" data-k="prince2">PRINCE2<small>1996 英國</small></button><span class="a">·</span>
+<button class="n p" data-k="ccpm">關鍵鏈 CCPM<small>Goldratt 1997</small></button><span class="a">·</span>
+<button class="n p" data-k="iso">ISO 21500<small>2012</small></button><span class="a">·</span>
+<button class="n p" data-k="ppp">專案→計畫→組合<small>PMO 治理</small></button>
+</div>
+<div class="sec">④ 另一條河：從製造業流進來的精實與敏捷</div>
+<div class="lane">
+<button class="n t" data-k="tps">豐田生產方式<small>1950s</small></button><span class="a">→</span>
+<button class="n t" data-k="kanban">看板 Kanban<small>拉式流程</small></button><span class="a">→</span>
+<button class="n t" data-k="rugby">新產品開發賽局<small>1986 HBR</small></button><span class="a">→</span>
+<button class="n t" data-k="scrum">Scrum<small>1995</small></button><span class="a">→</span>
+<button class="n t" data-k="agilepm">敏捷宣言<small>2001</small></button><span class="a">→</span>
+<button class="n t" data-k="safe">規模化 SAFe<small>2011</small></button>
+</div>
+<div class="sec">⑤ 匯流與鐘擺：PMBOK 的三次轉向</div>
+<div class="lane">
+<button class="n p" data-k="pm6">第 6 版<small>49 個流程，規定式</small></button><span class="a">→</span>
+<button class="n t" data-k="pm7">第 7 版 2021<small>12 原則，價值導向</small></button><span class="a">→</span>
+<button class="n c" data-k="pm8">第 8 版 2025<small>6 原則＋40 非規定流程</small></button><span class="a">·</span>
+<button class="n t" data-k="hybrid">混合式成為主流</button>
+</div>
+<div class="sec">⑥ AI 時代：兩個方向</div>
+<div class="lane"><span class="lab">AI 用在 PM</span>
+<button class="n c" data-k="ai4pm">行政自動化<small>報告、排程、紀錄</small></button>
+<button class="n c" data-k="predict">風險預測<small>資料驅動決策</small></button>
+<button class="n c" data-k="agentpm">agent 當組員<small>人機混合團隊</small></button></div>
+<div class="lane" style="margin-top:6px"><span class="lab">PM 用在 AI</span>
+<button class="n c" data-k="cpmai">管理 AI 專案<small>PMI-CPMAI</small></button>
+<button class="n c" data-k="gov">agentic AI 治理<small>風險、權責</small></button>
+<button class="n c" data-k="uncert">不確定性管理<small>實驗式交付</small></button></div>
+<div class="sec">和軟體工程地圖的交會點</div>
+<div class="lane">
+<button class="n" data-k="x1">瀑布 ← 國防分階段審查</button><button class="n" data-k="x2">Kanban ← 豐田</button><button class="n" data-k="x3">Scrum ← 1986 論文</button><button class="n" data-k="x4">兩邊都在擺鐘擺</button><button class="n" data-k="x5">TPM 站在交界</button>
+</div>
+<div class="det">點上面任一節點看說明。</div>
+</div>
+
+<h3>重點一：軟體工程有不少東西是從專案管理和製造業借過去的</h3>
+<p>瀑布式的分階段審查來自國防系統開發；Kanban 來自豐田；Scrum 這個名字出自一篇研究製造業新產品開發的管理學論文。兩張地圖不是平行的，專案管理那張比較像軟體工程的上游。</p>
+<h3>重點二：AI 在專案管理界也分成兩個方向</h3>
+<p>一個是 AI 用在 PM：PMI 2024 年的報告指出，AI 可以自動化約 25–30% 的專案管理工作，主要是狀態報告、排程計算、會議紀錄和資料輸入。另一個是 PM 用在 AI：PMI 的 CPMAI 認證重點是交付 AI 專案，而不是在專案裡使用 AI。目前專案管理界在 AI 上比軟體界慢，PMBOK 8 只在附錄用約 8 頁概述 AI；但 agentic AI 的治理與風險管理已被顧問業列為 2026 年的首要趨勢之一。</p>
+
+<h2 id="cross">三、兩張地圖的交會</h2>
+<h3>同一個鐘擺</h3>
+<p>PMBOK：第 6 版是 10 個知識領域加 49 個流程的規定式；第 7 版放棄流程，改成 12 條原則和 8 個績效領域；實務界覺得太抽象，第 8 版又把原則濃縮成 6 條、績效領域改成 7 個，並重新加回 40 個非規定式流程。軟體那邊是「瀑布 → 敏捷 → SDD 又重視規格」。兩邊走的是同一條曲線：拿掉結構之後發現還是需要結構，只是這次是可以裁剪的結構。</p>
+<h3>從做產品，到設計做出產品的系統</h3>
+<p>兩張地圖反覆出現同一個轉折：重點從產出本身，移到產出它的系統。豐田真正厲害的是生產方式，不是車；harness 工程講的 Agent = Model + Harness，也是在說模型像工人，要設計的是那條產線。軟體開發不再只是投入一個專案，而是要經營產出專案的整條 AI 工作 pipeline。</p>
+<p>這個方向有兩個提醒：</p>
+<ul>
+<li>設計產線的人要能判斷產出的好壞。驗收標準、eval 要測什麼、規格寫多細，都需要技術判斷力；沒辦法替自己看不出好壞的東西設計驗收關卡。</li>
+<li>產線要靠真的出貨來驗證。pipeline 的每次改進，最好都對應到實際專案遇到的痛點，而不是先把 pipeline 做完美再開始用。</li>
+</ul>
+<p>可以從專案管理和 SRE 借一個做法：給 AI 工作 pipeline 定幾個量測指標，例如從想法到驗收通過要多久、被退回重做的比例、每個任務要人介入幾次。這和 DORA 指標、實獲值管理是同一個精神。</p>
+
+<h2 id="sources">資料來源</h2>
+<ul class="src">
+<li><a href="https://www.martinfowler.com/articles/exploring-gen-ai/sdd-3-tools.html">Understanding Spec-Driven-Development: Kiro, spec-kit, and Tessl — martinfowler.com</a></li>
+<li><a href="https://www.thoughtworks.com/radar/techniques/spec-driven-development">Thoughtworks Technology Radar: Spec-driven development</a></li>
+<li><a href="https://arxiv.org/abs/2602.00180v1">Spec-Driven Development: From Code to Contract (arXiv 2602.00180)</a></li>
+<li><a href="https://medium.com/data-science-collective/spec-driven-development-when-intent-becomes-the-source-code-3af39f86b9d3">Spec-Driven Development: When Intent Becomes the Source Code — Medium</a></li>
+<li><a href="https://learnagentic.substack.com/p/what-is-harness-engineering">What Is Harness Engineering? — Learn Agentic</a></li>
+<li><a href="https://tianpan.co/blog/2026/02/17/harness-engineering-agent-first-software-development">Harness Engineering — Tian Pan</a></li>
+<li><a href="https://www.heyuan110.com/posts/ai/2026-06-16-context-engineering-2026/">Context Engineering for Coding Agents 2026</a></li>
+<li><a href="https://alexcloudstar.com/md/blog/context-engineering-ai-coding-2026/">Context Engineering in 2026 — alexcloudstar</a></li>
+<li><a href="https://rubinlake.com/en/technology-radar/developer-ai-and-delivery/spec-driven-development">Spec-Driven Development Assess — Rubinlake</a></li>
+<li><a href="https://www.4pmti.com/?p=1006110">What Is the PMBOK 8th Edition? — 4PMTI</a></li>
+<li><a href="https://pmstudycircle.com/pmbok-guide-8th-edition/">What is New in the PMBOK Guide 8th Edition? — PM Study Circle</a></li>
+<li><a href="https://onlinepmcourses.com/ai-project-management-2025-review-and-2026-trends-boon-or-bubble/">AI Project Management 2025 Review and 2026 Trends — OnlinePMCourses</a></li>
+<li><a href="https://www.4pmti.com/?p=1004458">AI &amp; Project Management — 4PMTI</a></li>
+<li><a href="https://clarkstonconsulting.com/insights/2026-program-and-project-management-trends/">2026 Program and Project Management Trends — Clarkston Consulting</a></li>
+</ul>
+<p class="note">年份為常見引用的大略時間點，供建立脈絡用。</p>
+</main>
+<script>
+const D={
+crisis:"1968 年 NATO 會議正式提出「軟體工程」這個詞，起因是專案普遍超支、延期、品質失控。之後所有方法論都是在回答同一題：怎麼讓軟體開發可預測。",
+waterfall:"需求 → 設計 → 實作 → 測試 → 維運，一階段做完才下一階段。重點在前期把文件寫清楚。SDD 常被批評是「瀑布 2.0」，就是因為它也把規格放最前面。",
+spiral:"Boehm 的螺旋模型引入風險驅動與迭代；CMM 用成熟度等級衡量組織流程。這是「流程可量測」的起點，今天的 DORA 指標、SDD 成熟度模型都延續這種思路。",
+agile:"敏捷宣言：可用的軟體 > 詳盡的文件，回應變化 > 遵循計畫。是對瀑布的反動。AI 時代的弔詭是：文件（規格）又變重要了，因為 agent 需要它，但節奏仍是小步迭代。",
+devops:"把開發和維運打通，靠自動化管線（CI/CD）讓交付變快變穩。AI 時代的 eval gate、agent 在 CI 裡跑，都是接在這條管線上。",
+sre:"SRE 用工程方法管可靠性（SLO、錯誤預算）；平台工程把內部工具做成產品給開發者用。Harness 工程某種程度就是「給 agent 用的平台工程」。",
+formal:"用數學語言精確描述系統行為，可以證明正確性。成本高所以只用在關鍵系統（例如用 TLA+ 驗證分散式協定）。是「規格即真相」最極端的祖先。",
+dbc:"Bertrand Meyer 提出：函式有前置條件、後置條件、不變量，像合約。現在 SDD 文章常說「spec 是可執行的合約」，概念直接來自這裡。",
+mdd:"OMG 的 MDA：先畫 UML 模型，再自動產生程式碼。結果不太成功，因為模型太僵、產生的程式難維護。Böckeler 警告 spec-as-source 可能同時繼承 MDD 的僵化和 LLM 的不確定性。",
+tdd:"先寫測試再寫實作。本質是「微型規格」：測試就是對行為的精確描述。SDD 的驗收條件、eval 都是它的放大版。",
+bdd:"用 Given/When/Then 寫人看得懂、機器也能跑的行為規格。學術上把 BDD 框架列為 SDD 的直系前身。",
+api:"先定義 API 合約（OpenAPI schema）再實作前後端。合約先於程式碼存在，這正是 SDD 的核心態度。",
+complete:"AI 只補下一行，人還是完全主導。工程方法不需要改變。",
+prompt:"關注「怎麼問」：措辭、範例、角色設定。單輪對話的最佳化。",
+vibe:"Karpathy 2025 年 2 月提出：順著感覺讓 AI 寫，不太看程式碼。適合原型與 side project，但長期維護和企業場景會失控，SDD 就是被當成它的解方提出來的。",
+context:"從「怎麼問」擴大到「模型能看到什麼」：系統提示、工具輸出、對話歷史、記憶檔、檢索結果全部算。2026 年的共識是減法比加法有效，AGENTS.md 建議控制在 150 行內，研究甚至發現 LLM 自動生成的上下文檔會降低成功率。",
+sdd:"先寫結構化規格（需求、設計、任務），規格成為人和 AI 共同的真相來源，agent 照規格實作。Thoughtworks 技術雷達放在 Assess（值得探索，不是馬上全面採用），建議用在跨模組的中型功能，小 bug 不要用。",
+harness:"2026 年的新框架：Agent = Model + Harness。Harness 是模型以外的一切：規格、沙箱、工具、review、eval、恢復機制。LangChain 只改 harness 不換模型，在 Terminal Bench 2.0 從第 30 名進到前 5。上下文工程是 harness 的一個子元件。",
+sf:"Böckeler 的分類第一層：開發前先寫 spec，用完就不管了。大部分人現在的做法。",
+sa:"第二層：spec 在功能完成後仍持續維護，之後改功能時先改 spec。",
+ss:"第三層：spec 才是主要產物，人只編輯 spec，程式碼像編譯器輸出。目前沒有工具真正做到，Tessl 原本走這條路，後來轉向 skills registry。",
+kit:"GitHub 開源（MIT），流程是 Constitution → Specify → Plan → Tasks，constitution 是專案層級的不變原則。支援約 30 種 coding agent。",
+kiro:"AWS 的 agentic IDE（也有 CLI），引導你走 requirements → design → tasks 三份文件，也有給 bug 用的輕量 Bugfix Spec。",
+tessl:"走最激進的路線：spec 取代程式碼成為維護對象。現在主力是 skills/tiles 套件庫加 evals。",
+agents:"給 agent 讀的專案記憶檔。2025 年 12 月 AGENTS.md 捐給 Linux 基金會的 Agentic AI Foundation，成為跨工具的通用格式。它是上下文工程和 SDD constitution 的共同載體。",
+m1:"以前需求文件給人讀、常過期；現在 spec 給 agent 執行，過期就直接產出錯的程式，所以被迫保持同步。",
+m2:"團隊的程式碼規範、架構決策，變成 Spec Kit 的 constitution 或 AGENTS.md，每次都餵給 agent。",
+m3:"AI 輸出不確定，不能只用「等於某字串」來斷言。行為式 eval 斷言的是中間步驟：遇到模糊需求有沒有先問、改 build 檔後有沒有跑驗證。",
+m4:"生成和驗證分開：Anthropic 的長任務 harness 用 planner 寫規格、generator 實作、獨立 evaluator 驗收。驗證的 agent 需要和生成的 agent 不同的上下文。",
+m5:"以前寫給新人看的文件，現在也是寫給 agent 看的。repo 本身變成人和 agent 之間主要的溝通管道。",
+m6:"每個 PR 跑 eval suite，對比目前 production 的通過率，退步就擋住。因為 AI 有隨機性，看批次通過率的趨勢比看單次結果可靠。",
+evals:"把 eval 當成 agent 的「訓練資料」：每次 agent 出錯的 trace 都轉成新的 eval case，再用它來改 harness。是 TDD 在 AI 系統上的對應。",
+obs:"記錄 agent 每一步（狀態、動作、結果、是否驗證），可以重播、切片分析。是 SRE 可觀測性在 agent 上的延伸。",
+sandbox:"agent 會執行指令，所以隔離執行環境、限制權限、設定成本上限和緊急停止開關是基礎建設，不是可有可無的安全裝飾。",
+debt:"Thoughtworks 技術雷達第 34 期（2026.04）的主題：AI 加速產生程式碼，但團隊對系統的理解跟不上，累積「認知債務」。規格和文件是對抗它的手段之一。",
+llmops:"從傳統 ML 的模型版本、資料管線、監控，延伸到 LLM 應用的 prompt 版控、eval、成本與延遲追蹤。",
+bitter:"Thoughtworks 的提醒：手工為 AI 寫詳細規則可能重蹈 bitter lesson（手工規則最終輸給規模化）。他們內部也分兩派：一派相信越來越強的 agent 只需最少結構，另一派偏好定義清楚的流程。",
+taylor:"Frederick Taylor 用碼錶測量工人動作、拆解成標準作業，主張管理可以是一門科學。好處是「工作可以量測和計畫」；壞處是把人當零件。後來的人本管理和敏捷都在修正這一點。",
+gantt:"Henry Gantt 發明的橫條圖，用來表示任務和時間。一百多年後仍是最普及的排程視覺化，Jira 的 timeline、MS Project 都是它的後代。",
+fayol:"Henri Fayol 把管理分成計畫、組織、指揮、協調、控制。PMBOK 早期的流程群組（啟動、規劃、執行、監控、結案）可以看到這個影子。",
+manhattan:"原子彈計畫，常被當成第一個現代意義的大型專案：明確目標、極大預算、跨組織協作、高度不確定。專案管理從這類國家級計畫開始成形。",
+cpm:"杜邦與 Remington Rand 為化工廠維修開發。找出任務之間「最長的那條依賴路徑」，這條路徑上任何延誤都會讓整個專案延誤。任務 DAG 和拓撲排序在這裡第一次被拿來管工程。",
+pert:"美國海軍北極星飛彈計畫開發，和 CPM 類似，但每個任務用三點估計（樂觀、最可能、悲觀）處理不確定性。它是把機率帶進排程的第一步。",
+wbs:"把專案往下拆成可交付的工作包，直到可以估算和指派。這個思路和軟體的模組化、SDD 把規格拆成 tasks 是同一件事。",
+evm:"用「計畫價值、實獲值、實際成本」三個數字同時衡量進度和預算偏差。美國國防部要求承包商使用，至今仍是大型政府專案的標準。",
+pmi:"IPMA（1965 歐洲）和 PMI（1969 美國）成立，專案管理開始有專業社群、知識體系和認證，成為一個職業。",
+pmbok:"PMI 的知識體系指南。第 6 版之前是知識領域加流程群組的結構，非常完整但也很規定式，PMP 考試就是考這套。",
+prince2:"英國政府標準，強調商業論證（這個專案還值不值得做）、階段管理、例外管理。比 PMBOK 更像一套可以直接照做的方法。",
+ccpm:"Goldratt 從限制理論延伸：個別任務不留緩衝，把緩衝集中放在專案尾端，並且管理資源衝突，而不只是任務依賴。",
+iso:"國際標準化組織的專案管理指引，讓各國的實踐有共同語言。",
+ppp:"單一專案 → 多個相關專案組成的計畫（program）→ 公司層級的專案組合（portfolio）。PMO 負責治理和資源分配。這一層和 OKR、策略管理接軌。",
+tps:"豐田的及時生產（JIT）和自働化：消除浪費、讓問題立刻浮現、持續改善。精實思想後來從工廠擴散到新創（Lean Startup）和軟體。",
+kanban:"用看板卡片限制在製品數量（WIP limit），下游有空才往上游拉工作。David Anderson 2000 年代把它改造成知識工作的方法。",
+rugby:"竹內弘高和野中郁次郎 1986 年在《哈佛商業評論》發表的論文，用橄欖球「並列爭球」比喻跨功能團隊一起推進新產品，不是接力棒傳遞。Scrum 的名字就出自這裡。",
+scrum:"Schwaber 和 Sutherland 1995 年正式發表：固定長度的衝刺、產品待辦清單、每日站會、回顧。最流行的敏捷框架。",
+agilepm:"17 個人在猶他州寫下的宣言。雖然是軟體圈發起的，但後來回頭改變了整個專案管理界，PMBOK 第 6 版開始加入敏捷附錄。",
+safe:"把敏捷擴大到幾百上千人組織的框架。爭議很大，批評者認為它把敏捷又變回了重流程的管理。",
+pm6:"規定式的巔峰：10 個知識領域、5 個流程群組、49 個流程，每個流程都有輸入、工具技術、輸出。",
+pm7:"大轉向：拿掉流程，改成 12 條原則和 8 個績效領域，強調交付價值而不是遵循流程。實務界反應兩極，很多人覺得太抽象、不知道怎麼做。",
+pm8:"鐘擺往回擺：原則精簡成 6 條，績效領域改成 7 個（治理、範疇、時程、財務、利害關係人、資源、風險），重新加入 5 個焦點領域和 40 個非規定式流程。AI 也被納入，不過只在附錄用很短的篇幅概述。",
+hybrid:"預測式和適應式混用，看專案和利害關係人的需要決定。PMI 報告混合式做法的使用量明顯上升。",
+ai4pm:"PMI 2024 年的報告指出，AI 可以自動化約 25–30% 的專案管理工作，主要是狀態報告、排程計算、會議紀錄和資料輸入。",
+predict:"用歷史專案資料預測延誤和風險，取代純憑經驗的判斷。前提是組織有乾淨的專案資料，這往往才是真正的瓶頸。",
+agentpm:"AI agent 開始承擔任務，PM 要管理的變成人和 agent 混合的團隊：誰負責、怎麼驗收、出錯誰扛。這和軟體端的 harness 工程是同一個問題的管理面。",
+cpmai:"PMI 的 AI 專案管理認證。重點是怎麼交付 AI 專案，不是在專案裡使用 AI。AI 專案有資料不確定、模型效果事先無法保證的特性，傳統的範疇、時程估算很難套用。",
+gov:"2026 年顧問業列為首要趨勢之一：agentic AI 的治理與風險管理。誰授權 agent 做什麼、怎麼稽核、出錯的責任歸屬。",
+uncert:"AI 專案更像研發：先做小實驗驗證可行性，再決定要不要擴大。這把專案管理拉回 PERT 當年面對的老問題：怎麼為不確定的工作做計畫。",
+x1:"Royce 1970 年那篇常被引用為瀑布起源的論文，背景是大型國防系統開發。分階段、每階段審查的做法，是從國防和營建的專案管理移植過去的。",
+x2:"軟體的 Kanban 板直接來自豐田生產線，經過 David Anderson 改造成適合知識工作的版本。",
+x3:"Scrum 的名字和核心想法來自一篇管理學論文，研究對象是本田、佳能等製造業的新產品開發，不是軟體。",
+x4:"PMBOK：規定式流程 → 純原則 → 原則加非規定流程。軟體：瀑布 → 敏捷 → SDD 重新重視規格。兩邊都在找「結構」和「彈性」之間的平衡點，AI 讓這個問題又被重新問一次。",
+x5:"技術專案經理（TPM）需要同時懂兩張地圖：用專案管理的工具（依賴、風險、利害關係人）管技術工作，又要懂架構，才能判斷技術風險和工作拆解是否合理。"
+};
+document.querySelectorAll('.map').forEach(m=>{const det=m.querySelector('.det');m.querySelectorAll('.n[data-k]').forEach(e=>e.addEventListener('click',()=>{m.querySelectorAll('.n.on').forEach(x=>x.classList.remove('on'));e.classList.add('on');det.textContent=D[e.dataset.k]||'';}));});
+</script>
+</body>
+</html>
