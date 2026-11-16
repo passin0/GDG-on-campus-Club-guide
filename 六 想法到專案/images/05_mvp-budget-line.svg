@@ -1,0 +1,76 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="690" viewBox="0 0 1200 690" font-family="'Noto Sans TC','Microsoft JhengHei',sans-serif">
+  <rect width="1200" height="690" fill="#FFFFFF"/>
+  <defs>
+    <marker id="inf" markerWidth="14" markerHeight="14" refX="2" refY="7" orient="auto"><path d="M0,0 L14,7 L0,14 z" fill="#BDC1C6"/></marker>
+  </defs>
+  <text x="600" y="48" text-anchor="middle" font-size="28" font-weight="700" fill="#202124">MVP 是算出來的：累計時數超過預算，就畫線</text>
+  <text x="440" y="88" font-size="15" fill="#5F6368">累計時數（從最重要的功能往下加，估時已乘 2～3）</text>
+
+  <!-- 12h guide -->
+  <line x1="740" y1="104" x2="740" y2="588" stroke="#EA4335" stroke-width="1.5" stroke-dasharray="4 6"/>
+
+  <!-- MVP rows -->
+  <g font-size="18" fill="#202124">
+    <circle cx="52" cy="128" r="14" fill="#4285F4"/><text x="52" y="134" text-anchor="middle" font-size="15" font-weight="700" fill="#FFFFFF">1</text>
+    <text x="76" y="134">用國語說出目的地，顯示確認畫面</text>
+    <rect x="440" y="110" width="75" height="36" rx="6" fill="#4285F4"/>
+    <text x="525" y="134" font-size="16" fill="#5F6368">3 小時</text>
+
+    <circle cx="52" cy="184" r="14" fill="#4285F4"/><text x="52" y="190" text-anchor="middle" font-size="15" font-weight="700" fill="#FFFFFF">2</text>
+    <text x="76" y="190">查出最快的方式（捷運／公車／YouBike）</text>
+    <rect x="440" y="166" width="175" height="36" rx="6" fill="#4285F4"/>
+    <text x="625" y="190" font-size="16" fill="#5F6368">7 小時</text>
+
+    <circle cx="52" cy="240" r="14" fill="#4285F4"/><text x="52" y="246" text-anchor="middle" font-size="15" font-weight="700" fill="#FFFFFF">3</text>
+    <text x="76" y="246">告訴你「幾點前出門才不會遲到」</text>
+    <rect x="440" y="222" width="225" height="36" rx="6" fill="#4285F4"/>
+    <text x="675" y="246" font-size="16" fill="#5F6368">9 小時</text>
+
+    <circle cx="52" cy="296" r="14" fill="#4285F4"/><text x="52" y="302" text-anchor="middle" font-size="15" font-weight="700" fill="#FFFFFF">4</text>
+    <text x="76" y="302">聽得懂台語</text>
+    <rect x="440" y="278" width="300" height="36" rx="6" fill="#4285F4"/>
+    <text x="750" y="302" font-size="16" fill="#5F6368">12 小時</text>
+  </g>
+
+  <!-- the line -->
+  <line x1="30" y1="340" x2="1040" y2="340" stroke="#EA4335" stroke-width="3" stroke-dasharray="12 8"/>
+  <rect x="400" y="320" width="400" height="40" rx="20" fill="#EA4335"/>
+  <text x="600" y="347" text-anchor="middle" font-size="18" font-weight="700" fill="#FFFFFF">時間預算 12 小時，在這裡畫線</text>
+
+  <!-- parking rows -->
+  <g font-size="18" fill="#80868B">
+    <circle cx="52" cy="384" r="14" fill="#BDC1C6"/><text x="52" y="390" text-anchor="middle" font-size="15" font-weight="700" fill="#FFFFFF">5</text>
+    <text x="76" y="390">客語、原住民語</text>
+    <rect x="440" y="366" width="450" height="36" rx="6" fill="#DADCE0"/>
+    <text x="900" y="390" font-size="16">18 小時</text>
+
+    <circle cx="52" cy="440" r="14" fill="#BDC1C6"/><text x="52" y="446" text-anchor="middle" font-size="15" font-weight="700" fill="#FFFFFF">6</text>
+    <text x="76" y="446">承受阿嬤機車撞擊的外殼</text>
+    <rect x="440" y="422" width="150" height="36" rx="6" fill="none" stroke="#BDC1C6" stroke-width="2" stroke-dasharray="6 5"/>
+    <text x="515" y="446" text-anchor="middle" font-size="16">要找土木系</text>
+
+    <circle cx="52" cy="496" r="14" fill="#BDC1C6"/><text x="52" y="502" text-anchor="middle" font-size="15" font-weight="700" fill="#FFFFFF">7</text>
+    <text x="76" y="502">傳送鹹酥雞、豆花</text>
+    <rect x="440" y="478" width="540" height="36" rx="6" fill="#DADCE0"/>
+    <path d="M980,478 L1010,496 L980,514 z" fill="#DADCE0"/>
+    <text x="1022" y="503" font-size="22" font-weight="700">∞</text>
+
+    <circle cx="52" cy="552" r="14" fill="#BDC1C6"/><text x="52" y="558" text-anchor="middle" font-size="15" font-weight="700" fill="#FFFFFF">8</text>
+    <text x="76" y="558">傳送人</text>
+    <rect x="440" y="534" width="540" height="36" rx="6" fill="#DADCE0"/>
+    <path d="M980,534 L1010,552 L980,570 z" fill="#DADCE0"/>
+    <text x="1022" y="559" font-size="22" font-weight="700">∞</text>
+  </g>
+
+  <!-- brackets -->
+  <path d="M1068,112 h10 v200 h-10" fill="none" stroke="#34A853" stroke-width="3"/>
+  <text x="1135" y="205" text-anchor="middle" font-size="24" font-weight="700" fill="#188038">MVP</text>
+  <text x="1135" y="233" text-anchor="middle" font-size="15" fill="#5F6368">傳送門 v0.1</text>
+
+  <path d="M1068,368 h10 v200 h-10" fill="none" stroke="#BDC1C6" stroke-width="3"/>
+  <text x="1135" y="461" text-anchor="middle" font-size="22" font-weight="700" fill="#80868B">停車場</text>
+  <text x="1135" y="489" text-anchor="middle" font-size="15" fill="#80868B">留給第二版</text>
+
+  <text x="600" y="640" text-anchor="middle" font-size="18" fill="#202124">線上面的就是你的 MVP，線下面的放進停車場。</text>
+  <text x="600" y="668" text-anchor="middle" font-size="15" fill="#5F6368">停車場不是垃圾桶：物理系做出來的那天，傳送人就從停車場開出來了</text>
+</svg>

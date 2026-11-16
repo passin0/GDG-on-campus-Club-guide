@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="760" viewBox="0 0 900 760" font-family="'Noto Sans TC','Microsoft JhengHei',sans-serif">
+  <rect width="900" height="760" fill="#FFFFFF"/>
+  <text x="450" y="48" text-anchor="middle" font-size="28" font-weight="700" fill="#202124">專案起步卡：今天每一節，都在填它的一欄</text>
+
+  <!-- card shadow + body -->
+  <rect x="96" y="86" width="708" height="610" rx="20" fill="#E8EAED"/>
+  <rect x="90" y="80" width="708" height="610" rx="20" fill="#FFFFFF" stroke="#DADCE0" stroke-width="2"/>
+  <path d="M110,80 h668 a20,20 0 0 1 20,20 v50 h-708 v-50 a20,20 0 0 1 20,-20 z" fill="#4285F4"/>
+  <text x="120" y="125" font-size="24" font-weight="700" fill="#FFFFFF">專案起步卡</text>
+  <text x="768" y="125" text-anchor="end" font-size="15" fill="#E8F0FE">寫給自己看，也寫給 AI 看</text>
+
+  <!-- rows -->
+  <g>
+    <rect x="115" y="170" width="8" height="70" rx="4" fill="#4285F4"/>
+    <text x="140" y="200" font-size="20" font-weight="700" fill="#202124">這是什麼？（問題句）</text>
+    <text x="140" y="228" font-size="15" fill="#5F6368">誰、在什麼情境、卡在哪裡</text>
+    <rect x="660" y="187" width="110" height="36" rx="18" fill="#E8F0FE"/><text x="715" y="211" text-anchor="middle" font-size="16" font-weight="700" fill="#1967D2">第 1 節</text>
+
+    <rect x="115" y="256" width="8" height="70" rx="4" fill="#EA4335"/>
+    <text x="140" y="286" font-size="20" font-weight="700" fill="#202124">使用流程（4 步）</text>
+    <text x="140" y="314" font-size="15" fill="#5F6368">使用者怎麼一步一步完成</text>
+    <rect x="660" y="273" width="110" height="36" rx="18" fill="#FCE8E6"/><text x="715" y="297" text-anchor="middle" font-size="16" font-weight="700" fill="#C5221F">第 2 節</text>
+
+    <rect x="115" y="342" width="8" height="70" rx="4" fill="#FBBC04"/>
+    <text x="140" y="372" font-size="20" font-weight="700" fill="#202124">三關檢查</text>
+    <text x="140" y="400" font-size="15" fill="#5F6368">第一個使用者、我的紅燈、30 分鐘小實驗</text>
+    <rect x="660" y="359" width="110" height="36" rx="18" fill="#FEF7E0"/><text x="715" y="383" text-anchor="middle" font-size="16" font-weight="700" fill="#B06000">第 3 節</text>
+
+    <rect x="115" y="428" width="8" height="70" rx="4" fill="#34A853"/>
+    <text x="140" y="458" font-size="20" font-weight="700" fill="#202124">時間預算、第一版範圍／停車場</text>
+    <text x="140" y="486" font-size="15" fill="#5F6368">每週幾小時 × 幾週，線上面做什麼、線下面停什麼</text>
+    <rect x="660" y="445" width="110" height="36" rx="18" fill="#E6F4EA"/><text x="715" y="469" text-anchor="middle" font-size="16" font-weight="700" fill="#188038">第 4 節</text>
+
+    <rect x="115" y="514" width="8" height="70" rx="4" fill="#4285F4"/>
+    <text x="140" y="544" font-size="20" font-weight="700" fill="#202124">切片與驗收</text>
+    <text x="140" y="572" font-size="15" fill="#5F6368">第一片做什麼、怎樣才算做完</text>
+    <rect x="660" y="531" width="110" height="36" rx="18" fill="#E8F0FE"/><text x="715" y="555" text-anchor="middle" font-size="16" font-weight="700" fill="#1967D2">第 5 節</text>
+
+    <rect x="115" y="600" width="8" height="70" rx="4" fill="#EA4335"/>
+    <text x="140" y="630" font-size="20" font-weight="700" fill="#202124">給 AI 的注意事項</text>
+    <text x="140" y="658" font-size="15" fill="#5F6368">先計畫再寫、不做的別加、一次只做一片</text>
+    <rect x="660" y="617" width="110" height="36" rx="18" fill="#FCE8E6"/><text x="715" y="641" text-anchor="middle" font-size="16" font-weight="700" fill="#C5221F">第 6 節</text>
+  </g>
+
+  <text x="450" y="735" text-anchor="middle" font-size="16" fill="#5F6368">寫在紙上、HackMD、Notion、備忘錄都可以；貼給 AI，它就不用每次重新認識你的專案</text>
+</svg>

@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1300" height="540" viewBox="0 0 1300 540" font-family="'Noto Sans TC','Microsoft JhengHei',sans-serif">
+  <rect width="1300" height="540" fill="#FFFFFF"/>
+  <text x="650" y="48" text-anchor="middle" font-size="28" font-weight="700" fill="#202124">傳送門的 4 步使用流程</text>
+
+  <!-- card 1 -->
+  <g>
+    <rect x="30" y="85" width="280" height="390" rx="16" fill="#FFFFFF" stroke="#4285F4" stroke-width="2"/>
+    <rect x="30" y="85" width="280" height="56" rx="16" fill="#4285F4"/><rect x="30" y="120" width="280" height="21" fill="#4285F4"/>
+    <text x="170" y="122" text-anchor="middle" font-size="22" font-weight="700" fill="#FFFFFF">1</text>
+    <text x="52" y="178" font-size="15" font-weight="700" fill="#1967D2">使用者做什麼</text>
+    <text x="52" y="210" font-size="18" fill="#202124">走到捷運站旁的傳送門，</text>
+    <text x="52" y="238" font-size="18" fill="#202124">說「我欲去士林夜市」</text>
+    <path d="M31,456 v-156 h278 v156 a18,18 0 0 1 -18,18 h-242 a18,18 0 0 1 -18,-18 z" fill="#E8F0FE"/>
+    <text x="52" y="336" font-size="15" font-weight="700" fill="#1967D2">看到什麼</text>
+    <text x="52" y="368" font-size="17" fill="#202124">辨識台語，顯示</text>
+    <text x="52" y="396" font-size="17" fill="#202124">「目的地：士林夜市，</text>
+    <text x="52" y="424" font-size="17" fill="#202124">　確認？」</text>
+  </g>
+  <path d="M320,280 l16,0 l0,-10 l14,15 l-14,15 l0,-10 l-16,0 z" fill="#BDC1C6"/>
+
+  <!-- card 2 -->
+  <g>
+    <rect x="350" y="85" width="280" height="390" rx="16" fill="#FFFFFF" stroke="#EA4335" stroke-width="2"/>
+    <rect x="350" y="85" width="280" height="56" rx="16" fill="#EA4335"/><rect x="350" y="120" width="280" height="21" fill="#EA4335"/>
+    <text x="490" y="122" text-anchor="middle" font-size="22" font-weight="700" fill="#FFFFFF">2</text>
+    <text x="372" y="178" font-size="15" font-weight="700" fill="#C5221F">使用者做什麼</text>
+    <text x="372" y="210" font-size="18" fill="#202124">說「著」或按確認</text>
+    <path d="M351,456 v-156 h278 v156 a18,18 0 0 1 -18,18 h-242 a18,18 0 0 1 -18,-18 z" fill="#FCE8E6"/>
+    <text x="372" y="336" font-size="15" font-weight="700" fill="#C5221F">看到什麼</text>
+    <text x="372" y="368" font-size="17" fill="#202124">系統檢查士林那邊的</text>
+    <text x="372" y="396" font-size="17" fill="#202124">傳送門有沒有人卡著</text>
+  </g>
+  <path d="M640,280 l16,0 l0,-10 l14,15 l-14,15 l0,-10 l-16,0 z" fill="#BDC1C6"/>
+
+  <!-- card 3 -->
+  <g>
+    <rect x="670" y="85" width="280" height="390" rx="16" fill="#FFFFFF" stroke="#FBBC04" stroke-width="2"/>
+    <rect x="670" y="85" width="280" height="56" rx="16" fill="#FBBC04"/><rect x="670" y="120" width="280" height="21" fill="#FBBC04"/>
+    <text x="810" y="122" text-anchor="middle" font-size="22" font-weight="700" fill="#202124">3</text>
+    <text x="692" y="178" font-size="15" font-weight="700" fill="#B06000">使用者做什麼</text>
+    <text x="692" y="210" font-size="18" fill="#202124">拿著鹹酥雞走進門</text>
+    <path d="M671,456 v-156 h278 v156 a18,18 0 0 1 -18,18 h-242 a18,18 0 0 1 -18,-18 z" fill="#FEF7E0"/>
+    <text x="692" y="336" font-size="15" font-weight="700" fill="#B06000">看到什麼</text>
+    <text x="692" y="368" font-size="17" fill="#202124">掃描人＋鹹酥雞，</text>
+    <text x="692" y="396" font-size="17" fill="#202124">倒數 3 秒</text>
+  </g>
+  <path d="M960,280 l16,0 l0,-10 l14,15 l-14,15 l0,-10 l-16,0 z" fill="#BDC1C6"/>
+
+  <!-- card 4 -->
+  <g>
+    <rect x="990" y="85" width="280" height="390" rx="16" fill="#FFFFFF" stroke="#34A853" stroke-width="2"/>
+    <rect x="990" y="85" width="280" height="56" rx="16" fill="#34A853"/><rect x="990" y="120" width="280" height="21" fill="#34A853"/>
+    <text x="1130" y="122" text-anchor="middle" font-size="22" font-weight="700" fill="#FFFFFF">4</text>
+    <text x="1012" y="178" font-size="15" font-weight="700" fill="#188038">使用者做什麼</text>
+    <text x="1012" y="210" font-size="18" fill="#202124">走出門</text>
+    <path d="M991,456 v-156 h278 v156 a18,18 0 0 1 -18,18 h-242 a18,18 0 0 1 -18,-18 z" fill="#E6F4EA"/>
+    <text x="1012" y="336" font-size="15" font-weight="700" fill="#188038">看到什麼</text>
+    <text x="1012" y="368" font-size="17" fill="#202124">人在士林夜市，顯示</text>
+    <text x="1012" y="396" font-size="17" fill="#202124">「傳送完成，</text>
+    <text x="1012" y="424" font-size="17" fill="#202124">　耗時 8 秒」</text>
+  </g>
+
+  <text x="650" y="515" text-anchor="middle" font-size="17" fill="#5F6368">寫不出四步？通常代表你還不知道使用者要「完成什麼事」，回去看一下你的問題句</text>
+</svg>

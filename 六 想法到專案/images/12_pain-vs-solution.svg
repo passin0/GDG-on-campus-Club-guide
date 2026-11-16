@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="580" viewBox="0 0 1100 580" font-family="'Noto Sans TC','Microsoft JhengHei',sans-serif">
+  <rect width="1100" height="580" fill="#FFFFFF"/>
+  <text x="550" y="48" text-anchor="middle" font-size="28" font-weight="700" fill="#202124">痛點 vs. 解答</text>
+
+  <!-- solution (wrong) -->
+  <rect x="40" y="80" width="490" height="340" rx="16" fill="#FCE8E6" stroke="#EA4335" stroke-width="3"/>
+  <g stroke="#EA4335" stroke-width="5" stroke-linecap="round"><line x1="72" y1="108" x2="96" y2="132"/><line x1="96" y1="108" x2="72" y2="132"/></g>
+  <text x="112" y="130" font-size="24" font-weight="700" fill="#C5221F">這是解答，不是痛點</text>
+  <text x="72" y="200" font-size="22" fill="#202124">「同學們沒有一個專屬的</text>
+  <text x="72" y="236" font-size="22" fill="#202124">　校園二手書交易平台。」</text>
+  <line x1="72" y1="300" x2="498" y2="300" stroke="#F4B4AE" stroke-width="2"/>
+  <text x="72" y="340" font-size="17" fill="#5F6368">已經偷偷決定好要做「平台」了，</text>
+  <text x="72" y="370" font-size="17" fill="#5F6368">這是在強推解答</text>
+
+  <!-- pain (right) -->
+  <rect x="570" y="80" width="490" height="340" rx="16" fill="#E6F4EA" stroke="#34A853" stroke-width="3"/>
+  <circle cx="614" cy="120" r="13" fill="none" stroke="#34A853" stroke-width="5"/>
+  <text x="642" y="130" font-size="24" font-weight="700" fill="#188038">這才是痛點</text>
+  <text x="602" y="182" font-size="21" fill="#202124">「大一新生買二手課本時，</text>
+  <text x="602" y="214" font-size="21" fill="#202124">　常常在 LINE 群組被洗訊息，</text>
+  <text x="602" y="246" font-size="21" fill="#202124">　不知道誰手上有書，</text>
+  <text x="602" y="278" font-size="21" fill="#202124">　成交效率極低。」</text>
+  <line x1="602" y1="300" x2="1028" y2="300" stroke="#A8DAB5" stroke-width="2"/>
+  <text x="602" y="340" font-size="17" fill="#5F6368">誰、在什麼情境、卡在哪裡都講清楚了，</text>
+  <text x="602" y="370" font-size="17" fill="#5F6368">但還沒決定要怎麼解</text>
+
+  <!-- portal -->
+  <rect x="40" y="450" width="1020" height="100" rx="16" fill="#F1F3F4"/>
+  <text x="550" y="492" text-anchor="middle" font-size="20" fill="#202124">傳送門也一樣：「蓋一個傳送門」是<tspan font-weight="700" fill="#C5221F">解答</tspan>，</text>
+  <text x="550" y="526" text-anchor="middle" font-size="20" fill="#202124">它背後真正的<tspan font-weight="700" fill="#188038">痛點</tspan>，其實是「每天通勤太久、太麻煩」</text>
+</svg>

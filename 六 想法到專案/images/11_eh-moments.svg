@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="660" viewBox="0 0 1000 660" font-family="'Noto Sans TC','Microsoft JhengHei',sans-serif">
+  <rect width="1000" height="660" fill="#FFFFFF"/>
+  <defs>
+    <marker id="a" markerWidth="12" markerHeight="12" refX="9" refY="6" orient="auto"><path d="M0,0 L12,6 L0,12 z" fill="#5F6368"/></marker>
+  </defs>
+  <text x="500" y="48" text-anchor="middle" font-size="28" font-weight="700" fill="#202124">每一種「欸？」，都通往不一樣的地方</text>
+
+  <!-- bubble -->
+  <path d="M60,250 a90,90 0 1 1 150,90 l25,45 l-55,-25 a90,90 0 0 1 -120,-110 z" fill="#FBBC04"/>
+  <text x="150" y="335" text-anchor="middle" font-size="54" font-weight="700" fill="#202124">欸？</text>
+
+  <g fill="none" stroke="#DADCE0" stroke-width="2.5">
+    <path d="M245,320 C290,320 290,128 330,128"/>
+    <path d="M245,320 C290,320 290,208 330,208"/>
+    <path d="M245,320 C290,320 290,288 330,288"/>
+    <path d="M245,320 C290,320 290,368 330,368"/>
+    <path d="M245,320 C290,320 290,448 330,448"/>
+    <path d="M245,320 C290,320 290,528 330,528"/>
+  </g>
+
+  <g font-size="20" fill="#202124">
+    <rect x="330" y="100" width="260" height="56" rx="28" fill="#F1F3F4"/><text x="460" y="135" text-anchor="middle">好煩</text>
+    <rect x="330" y="180" width="260" height="56" rx="28" fill="#F1F3F4"/><text x="460" y="215" text-anchor="middle">好怪</text>
+    <rect x="330" y="260" width="260" height="56" rx="28" fill="#F1F3F4"/><text x="460" y="295" text-anchor="middle">好酷</text>
+    <rect x="330" y="340" width="260" height="56" rx="28" fill="#F1F3F4"/><text x="460" y="375" text-anchor="middle">為什麼沒有？</text>
+    <rect x="330" y="420" width="260" height="56" rx="28" fill="#F1F3F4"/><text x="460" y="455" text-anchor="middle">如果可以這樣就好了</text>
+    <rect x="330" y="500" width="260" height="56" rx="28" fill="#F1F3F4"/><text x="460" y="535" text-anchor="middle">我想試試看</text>
+  </g>
+
+  <g stroke="#5F6368" stroke-width="2.5">
+    <line x1="600" y1="128" x2="648" y2="128" marker-end="url(#a)"/>
+    <line x1="600" y1="208" x2="648" y2="208" marker-end="url(#a)"/>
+    <line x1="600" y1="288" x2="648" y2="288" marker-end="url(#a)"/>
+    <line x1="600" y1="368" x2="648" y2="368" marker-end="url(#a)"/>
+    <line x1="600" y1="448" x2="648" y2="448" marker-end="url(#a)"/>
+    <line x1="600" y1="528" x2="648" y2="528" marker-end="url(#a)"/>
+  </g>
+
+  <g font-size="20">
+    <rect x="660" y="100" width="300" height="56" rx="12" fill="#FCE8E6" stroke="#EA4335" stroke-width="2"/>
+    <text x="684" y="135" font-weight="700" fill="#C5221F">Problem</text><text x="936" y="135" text-anchor="end" fill="#202124">問題</text>
+    <rect x="660" y="180" width="300" height="56" rx="12" fill="#FEF7E0" stroke="#FBBC04" stroke-width="2"/>
+    <text x="684" y="215" font-weight="700" fill="#B06000">Opportunity</text><text x="936" y="215" text-anchor="end" fill="#202124">機會</text>
+    <rect x="660" y="260" width="300" height="56" rx="12" fill="#E8F0FE" stroke="#4285F4" stroke-width="2"/>
+    <text x="684" y="295" font-weight="700" fill="#1967D2">Interest</text><text x="936" y="295" text-anchor="end" fill="#202124">興趣</text>
+    <rect x="660" y="340" width="300" height="56" rx="12" fill="#E6F4EA" stroke="#34A853" stroke-width="2"/>
+    <text x="684" y="375" font-weight="700" fill="#188038">Gap</text><text x="936" y="375" text-anchor="end" fill="#202124">缺口</text>
+    <rect x="660" y="420" width="300" height="56" rx="12" fill="#E8F0FE" stroke="#4285F4" stroke-width="2"/>
+    <text x="684" y="455" font-weight="700" fill="#1967D2">Idea</text><text x="936" y="455" text-anchor="end" fill="#202124">點子</text>
+    <rect x="660" y="500" width="300" height="56" rx="12" fill="#34A853"/>
+    <text x="684" y="535" font-weight="700" fill="#FFFFFF">Project</text><text x="936" y="535" text-anchor="end" font-weight="700" fill="#FFFFFF">專案</text>
+  </g>
+
+  <text x="500" y="620" text-anchor="middle" font-size="18" fill="#5F6368">不要逼自己想出一個 Idea。先去生活、去玩、去學、去觀察，然後注意那些讓你「欸？」的東西</text>
+</svg>

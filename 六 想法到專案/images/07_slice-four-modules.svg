@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="760" viewBox="0 0 960 760" font-family="'Noto Sans TC','Microsoft JhengHei',sans-serif">
+  <rect width="960" height="760" fill="#FFFFFF"/>
+  <defs>
+    <marker id="a" markerWidth="12" markerHeight="12" refX="9" refY="6" orient="auto"><path d="M0,0 L12,6 L0,12 z" fill="#5F6368"/></marker>
+  </defs>
+  <text x="480" y="48" text-anchor="middle" font-size="28" font-weight="700" fill="#202124">一個切片，會從上到下穿過四個責任區</text>
+  <rect x="190" y="74" width="580" height="48" rx="24" fill="#F1F3F4"/>
+  <text x="480" y="105" text-anchor="middle" font-size="19" fill="#202124">切片 1：說「我要去士林夜市」→ 顯示確認</text>
+
+  <!-- 介面 -->
+  <rect x="80" y="150" width="800" height="110" rx="14" fill="#FFFFFF" stroke="#4285F4" stroke-width="2"/>
+  <path d="M94,150 h126 v110 h-126 a14,14 0 0 1 -14,-14 v-82 a14,14 0 0 1 14,-14 z" fill="#4285F4"/>
+  <text x="150" y="214" text-anchor="middle" font-size="26" font-weight="700" fill="#FFFFFF">介面</text>
+  <text x="250" y="195" font-size="20" fill="#202124">一顆麥克風按鈕</text>
+  <text x="250" y="230" font-size="20" fill="#202124">一個確認畫面</text>
+  <text x="860" y="245" text-anchor="end" font-size="14" fill="#80868B">使用者看得到、按得到的</text>
+
+  <line x1="150" y1="260" x2="150" y2="292" stroke="#5F6368" stroke-width="2.5" marker-end="url(#a)"/>
+
+  <!-- 規則 -->
+  <rect x="80" y="300" width="800" height="110" rx="14" fill="#FFFFFF" stroke="#FBBC04" stroke-width="2"/>
+  <path d="M94,300 h126 v110 h-126 a14,14 0 0 1 -14,-14 v-82 a14,14 0 0 1 14,-14 z" fill="#FBBC04"/>
+  <text x="150" y="364" text-anchor="middle" font-size="26" font-weight="700" fill="#202124">規則</text>
+  <text x="250" y="345" font-size="20" fill="#202124">把語音轉成文字</text>
+  <text x="250" y="380" font-size="20" fill="#202124">判斷這是不是一個存在的地點</text>
+  <text x="860" y="395" text-anchor="end" font-size="14" fill="#80868B">系統允許什麼、怎麼判斷</text>
+
+  <line x1="150" y1="410" x2="150" y2="442" stroke="#5F6368" stroke-width="2.5" marker-end="url(#a)"/>
+
+  <!-- 資料 -->
+  <rect x="80" y="450" width="800" height="110" rx="14" fill="#FFFFFF" stroke="#34A853" stroke-width="2"/>
+  <path d="M94,450 h126 v110 h-126 a14,14 0 0 1 -14,-14 v-82 a14,14 0 0 1 14,-14 z" fill="#34A853"/>
+  <text x="150" y="514" text-anchor="middle" font-size="26" font-weight="700" fill="#FFFFFF">資料</text>
+  <text x="250" y="495" font-size="20" fill="#202124">一份地點清單</text>
+  <text x="250" y="530" font-size="20" fill="#5F6368">第一版先放 20 個常去的地方就好</text>
+  <text x="860" y="545" text-anchor="end" font-size="14" fill="#80868B">程式要記住的東西</text>
+
+  <line x1="150" y1="560" x2="150" y2="592" stroke="#5F6368" stroke-width="2.5" marker-end="url(#a)"/>
+
+  <!-- 回饋 -->
+  <rect x="80" y="600" width="800" height="110" rx="14" fill="#FFFFFF" stroke="#EA4335" stroke-width="2"/>
+  <path d="M94,600 h126 v110 h-126 a14,14 0 0 1 -14,-14 v-82 a14,14 0 0 1 14,-14 z" fill="#EA4335"/>
+  <text x="150" y="664" text-anchor="middle" font-size="26" font-weight="700" fill="#FFFFFF">回饋</text>
+  <text x="250" y="645" font-size="19" fill="#188038">成功：顯示「目的地：士林夜市，確認？」</text>
+  <text x="250" y="680" font-size="19" fill="#C5221F">失敗：顯示「找不到這個地方，請再說一次」</text>
+  <text x="860" y="695" text-anchor="end" font-size="14" fill="#80868B">告訴使用者結果</text>
+
+  <text x="480" y="745" text-anchor="middle" font-size="17" fill="#5F6368">畫得出這張圖，就知道要叫 AI 改哪裡；之後壞掉了，也知道該往哪一層找</text>
+</svg>

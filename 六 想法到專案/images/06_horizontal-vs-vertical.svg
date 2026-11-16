@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="650" viewBox="0 0 1200 650" font-family="'Noto Sans TC','Microsoft JhengHei',sans-serif">
+  <rect width="1200" height="650" fill="#FFFFFF"/>
+  <text x="600" y="48" text-anchor="middle" font-size="28" font-weight="700" fill="#202124">橫著切 vs 直著切：把作品想成一個三層蛋糕</text>
+
+  <!-- LEFT: horizontal -->
+  <rect x="30" y="80" width="555" height="500" rx="16" fill="#FFFFFF" stroke="#DADCE0" stroke-width="2"/>
+  <g stroke="#EA4335" stroke-width="4" stroke-linecap="round"><line x1="58" y1="104" x2="78" y2="124"/><line x1="78" y1="104" x2="58" y2="124"/></g>
+  <text x="92" y="122" font-size="22" font-weight="700" fill="#C5221F">橫著切：一層一層做</text>
+
+  <rect x="70" y="150" width="330" height="70" rx="8" fill="#4285F4"/>
+  <text x="235" y="192" text-anchor="middle" font-size="19" font-weight="700" fill="#FFFFFF">介面：所有畫面</text>
+  <rect x="70" y="225" width="330" height="70" rx="8" fill="#FBBC04"/>
+  <text x="235" y="267" text-anchor="middle" font-size="19" font-weight="700" fill="#202124">規則：語音辨識、查路線</text>
+  <rect x="70" y="300" width="330" height="70" rx="8" fill="#34A853"/>
+  <text x="235" y="342" text-anchor="middle" font-size="19" font-weight="700" fill="#FFFFFF">資料：地點、路線資料</text>
+
+  <g font-size="17" fill="#5F6368">
+    <text x="415" y="191">← 第一週做完</text>
+    <text x="415" y="266">← 第二週做完</text>
+    <text x="415" y="341">← 第三週做完</text>
+  </g>
+  <text x="70" y="420" font-size="19" fill="#202124">第四週：把三層串起來……</text>
+  <text x="70" y="456" font-size="21" font-weight="700" fill="#C5221F">然後發現什麼都接不起來</text>
+  <text x="70" y="510" font-size="16" fill="#5F6368">一直到最後一週，使用者都沒有任何東西可以用；</text>
+  <text x="70" y="536" font-size="16" fill="#5F6368">中途被期末考打斷，手上只剩四分之一個跑不動的專案。</text>
+
+  <!-- RIGHT: vertical -->
+  <rect x="615" y="80" width="555" height="500" rx="16" fill="#FFFFFF" stroke="#34A853" stroke-width="3"/>
+  <circle cx="653" cy="114" r="11" fill="none" stroke="#34A853" stroke-width="4"/>
+  <text x="677" y="122" font-size="22" font-weight="700" fill="#188038">直著切：每一片都吃到三層</text>
+
+  <g font-size="15" font-weight="700" text-anchor="middle">
+    <rect x="650" y="150" width="100" height="70" rx="8" fill="#4285F4"/><text x="700" y="191" fill="#FFFFFF">介面</text>
+    <rect x="650" y="225" width="100" height="70" rx="8" fill="#FBBC04"/><text x="700" y="266" fill="#202124">規則</text>
+    <rect x="650" y="300" width="100" height="70" rx="8" fill="#34A853"/><text x="700" y="341" fill="#FFFFFF">資料</text>
+
+    <rect x="775" y="150" width="100" height="70" rx="8" fill="#4285F4"/><text x="825" y="191" fill="#FFFFFF">介面</text>
+    <rect x="775" y="225" width="100" height="70" rx="8" fill="#FBBC04"/><text x="825" y="266" fill="#202124">規則</text>
+    <rect x="775" y="300" width="100" height="70" rx="8" fill="#34A853"/><text x="825" y="341" fill="#FFFFFF">資料</text>
+
+    <rect x="900" y="150" width="100" height="70" rx="8" fill="#4285F4"/><text x="950" y="191" fill="#FFFFFF">介面</text>
+    <rect x="900" y="225" width="100" height="70" rx="8" fill="#FBBC04"/><text x="950" y="266" fill="#202124">規則</text>
+    <rect x="900" y="300" width="100" height="70" rx="8" fill="#34A853"/><text x="950" y="341" fill="#FFFFFF">資料</text>
+
+    <rect x="1025" y="150" width="100" height="70" rx="8" fill="#4285F4"/><text x="1075" y="191" fill="#FFFFFF">介面</text>
+    <rect x="1025" y="225" width="100" height="70" rx="8" fill="#FBBC04"/><text x="1075" y="266" fill="#202124">規則</text>
+    <rect x="1025" y="300" width="100" height="70" rx="8" fill="#34A853"/><text x="1075" y="341" fill="#FFFFFF">資料</text>
+  </g>
+  <g font-size="16" text-anchor="middle" fill="#188038" font-weight="700">
+    <text x="700" y="398">切片 1 能跑</text>
+    <text x="825" y="398">切片 2 能跑</text>
+    <text x="950" y="398">切片 3 能跑</text>
+    <text x="1075" y="398">切片 4 能跑</text>
+  </g>
+  <g font-size="16" fill="#202124">
+    <text x="650" y="440">1　說「我要去士林夜市」→ 顯示「目的地：士林夜市」</text>
+    <text x="650" y="470">2　按確認 → 顯示最快的路線和時間</text>
+    <text x="650" y="500">3　顯示「幾點前出門才不會遲到」</text>
+    <text x="650" y="530">4　說台語也聽得懂</text>
+  </g>
+
+  <text x="600" y="620" text-anchor="middle" font-size="18" fill="#202124">直著切的每一片，做完都是一個能動、能展示的東西。只做完兩片被期末考打斷，你手上還是有一個能用的傳送門 v0.1。</text>
+</svg>

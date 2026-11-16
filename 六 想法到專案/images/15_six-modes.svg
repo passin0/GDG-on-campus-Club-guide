@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1240" height="720" viewBox="0 0 1240 720" font-family="'Noto Sans TC','Microsoft JhengHei',sans-serif">
+  <rect width="1240" height="720" fill="#FFFFFF"/>
+  <defs>
+    <marker id="a" markerUnits="userSpaceOnUse" markerWidth="14" markerHeight="14" refX="11" refY="7" orient="auto"><path d="M0,0 L14,7 L0,14 z" fill="#5F6368"/></marker>
+  </defs>
+  <text x="620" y="48" text-anchor="middle" font-size="28" font-weight="700" fill="#202124">進階：看你手上已經有什麼，挑一種當起點</text>
+
+  <rect x="30" y="340" width="220" height="66" rx="33" fill="#202124"/>
+  <text x="140" y="380" text-anchor="middle" font-size="20" font-weight="700" fill="#FFFFFF">你手上已經有……</text>
+  <g fill="none" stroke="#DADCE0" stroke-width="2.5">
+    <path d="M250,373 C280,373 280,128 300,128"/>
+    <path d="M250,373 C280,373 280,226 300,226"/>
+    <path d="M250,373 C280,373 280,324 300,324"/>
+    <path d="M250,373 C280,373 280,422 300,422"/>
+    <path d="M250,373 C280,373 280,520 300,520"/>
+    <path d="M250,373 C280,373 280,618 300,618"/>
+  </g>
+
+  <g font-size="17" fill="#202124" text-anchor="middle">
+    <rect x="300" y="100" width="240" height="56" rx="28" fill="#F1F3F4"/><text x="420" y="134">一堆資料、物品、紀錄</text>
+    <rect x="300" y="198" width="240" height="56" rx="28" fill="#F1F3F4"/><text x="420" y="232">很清楚的使用者</text>
+    <rect x="300" y="296" width="240" height="56" rx="28" fill="#F1F3F4"/><text x="420" y="330">一個每天都在跑的流程</text>
+    <rect x="300" y="394" width="240" height="56" rx="28" fill="#F1F3F4"/><text x="420" y="428">一個很具體的畫面或時刻</text>
+    <rect x="300" y="492" width="240" height="56" rx="28" fill="#F1F3F4"/><text x="420" y="526">一個想改善的數字</text>
+    <rect x="300" y="590" width="240" height="56" rx="28" fill="#F1F3F4"/><text x="420" y="624">什麼都沒有，只有感覺</text>
+  </g>
+
+  <g stroke="#5F6368" stroke-width="2.5">
+    <line x1="545" y1="128" x2="578" y2="128" marker-end="url(#a)"/>
+    <line x1="545" y1="226" x2="578" y2="226" marker-end="url(#a)"/>
+    <line x1="545" y1="324" x2="578" y2="324" marker-end="url(#a)"/>
+    <line x1="545" y1="422" x2="578" y2="422" marker-end="url(#a)"/>
+    <line x1="545" y1="520" x2="578" y2="520" marker-end="url(#a)"/>
+    <line x1="545" y1="618" x2="578" y2="618" marker-end="url(#a)"/>
+  </g>
+
+  <g font-size="19" font-weight="700" text-anchor="middle" fill="#FFFFFF">
+    <rect x="585" y="100" width="190" height="56" rx="12" fill="#4285F4"/><text x="680" y="135">Data-First</text>
+    <rect x="585" y="198" width="190" height="56" rx="12" fill="#EA4335"/><text x="680" y="233">User-First</text>
+    <rect x="585" y="296" width="190" height="56" rx="12" fill="#FBBC04"/><text x="680" y="331" fill="#202124">Workflow-First</text>
+    <rect x="585" y="394" width="190" height="56" rx="12" fill="#34A853"/><text x="680" y="429">Scenario-First</text>
+    <rect x="585" y="492" width="190" height="56" rx="12" fill="#4285F4"/><text x="680" y="527">Goal-First</text>
+    <rect x="585" y="590" width="190" height="56" rx="12" fill="#EA4335"/><text x="680" y="625">Prototype-First</text>
+  </g>
+
+  <g font-size="15" fill="#202124">
+    <text x="800" y="122">傳送的東西有哪些？人、衣服、鹹酥雞、豆花</text>
+    <text x="800" y="146" fill="#5F6368">各有什麼屬性？（豆花會灑，30 塊！！！）</text>
+    <text x="800" y="220">趕早八的大學生、上班族、騎山豬的阿嬤</text>
+    <text x="800" y="244" fill="#5F6368">阿嬤最痛的其實是路口一直紅燈</text>
+    <text x="800" y="318">說目的地 → 確認 → 掃描 → 傳送 → 抵達</text>
+    <text x="800" y="342" fill="#5F6368">哪一步最容易卡住？</text>
+    <text x="800" y="416">早上 7:65 還在板橋，早八在三峽 8:10 點名</text>
+    <text x="800" y="440" fill="#5F6368">系統應該做什麼？</text>
+    <text x="800" y="514">通勤從 50 分鐘變成 10 秒</text>
+    <text x="800" y="538" fill="#5F6368">怎麼量？計時，然後跟捷運比</text>
+    <text x="800" y="612">先做一個「說目的地，它會回你一句話」的假傳送門</text>
+    <text x="800" y="636" fill="#5F6368">看大家會不會真的對它講話</text>
+  </g>
+
+  <text x="620" y="695" text-anchor="middle" font-size="17" fill="#5F6368">同一個專案，不同起點會長出不同的設計重點。沒有哪個最正確，挑你最有把握的那個開始</text>
+</svg>
